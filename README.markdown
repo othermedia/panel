@@ -13,7 +13,10 @@ wraps its content in a panel.
 Setup information
 -----------------
 
-    pkg('Panel', 'http://cdn.othermedia.com/libs/panel/master/panel-min.js')
+    path = 'http://cdn.othermedia.com/libs/panel/master/panel-min.js';
+    pkg('Panel',        path);
+    pkg('PanelOverlay', path);
+    pkg('panel',        path)
         .requires('JS.Class')
         .requires('Ojay')
         .requires('Ojay.Observable')

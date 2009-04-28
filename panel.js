@@ -55,6 +55,19 @@ var Panel = new JS.Class({
     }
 });
 
+
+/**
+ * @param {String} classes
+ * @param {Function|String|HTMLElement} block
+ * @param {HtmlBuilder} HTML
+ * @returns {Ojay.DomCollection}
+ */
+var panel = function(classes, block, HTML) {
+    var p = new Panel(classes, block, HTML);
+    return p.getHTML();
+};
+    
+
 /**
  * @constructor
  * @class PanelOverlay
