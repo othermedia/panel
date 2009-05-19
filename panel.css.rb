@@ -22,7 +22,6 @@ panel = Stylish.generate do
     rule ".panel-b", :position => "relative", :width => "100%", :text_align => "left",
                      :display => "block", :height => "2px", :font_size => "1px",
                      :background => {:position => ["100%", "100%"]} do
-      # Could refactor with a 'this' method
       div :display => "block", :height => "2px", :font_size => "1px", :position => "relative",
         :width => "2px", :margin_left => "-2px", :background => {:position => ["0", "100%"]}
     end
