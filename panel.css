@@ -1,9 +1,9 @@
 /**
  * Panel
  */
-.panel {position:relative; margin:0 auto 1px 2px; z-index:1; display:block;}
-.panel .panel-c, .panel .panel-t, .panel .panel-b, .panel .panel-b div {display:block; background-image:url('/static/site/graphics/panel.png');}
+.panel {display:block; position:relative; margin:0 auto 1px 2px; z-index:1;}
+.panel .panel-c, .panel .panel-t, .panel .panel-b, .panel .panel-b div {display:block; background:url('/static/site/graphics/panel.png') no-repeat 100% 0;}
 .panel .panel-c {position:relative; zoom:1; padding:10px;}
-.panel .panel-t {top:0; position:absolute; width:2px; margin-left:-2px; background-position:top left; height:100%; left:0;}
-.panel .panel-b {font-size:1px; position:relative; width:100%; display:block; background-position:100% 100%; height:2px; text-align:left;}
-.panel .panel-b div {font-size:1px; position:relative; width:2px; margin-left:-2px; display:block; background-position:0 100%; height:2px;}
+.panel .panel-t {position:absolute; left:0; top:0; width:2px; margin-left:-2px; height:100%; background-position:top left;}
+.panel .panel-b {position:relative; width:100%; text-align:left; display:block; height:2px; font-size:1px; background-position:100% 100%;}
+.panel .panel-b div {display:block; height:2px; font-size:1px; position:relative; width:2px; margin-left:-2px; background-position:0 100%;}
