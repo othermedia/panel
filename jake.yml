@@ -8,4 +8,16 @@ builds:
     private:        true
 packages:
   panel:
-    - panel
+    files:
+      - panel
+    meta:
+      provides:
+        - panel
+        - Panel
+        - PanelOverlay
+      requires:
+        - JS.Class
+        - Ojay
+        - Ojay.HTML
+        - Ojay.ContentOverlay
+
