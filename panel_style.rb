@@ -28,6 +28,4 @@ panel = Stylish.generate do
   end
 end
 
-File.open("panel.css", "w+") do |f|
-  f.puts(panel.to_s(generic))
-end
+panel.print('panel.css', generic)
