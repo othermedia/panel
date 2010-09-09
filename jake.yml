@@ -1,8 +1,11 @@
 --
-source_directory:   .
-build_directory:    .
+source_directory:   source
+build_directory:    build
 layout:             together
 builds:
+  src:
+    shrink_vars:    false
+    private:        false
   min:
     shrink_vars:    true
     private:        true
@@ -20,4 +23,3 @@ packages:
         - Ojay
         - Ojay.HTML
         - Ojay.ContentOverlay
-
