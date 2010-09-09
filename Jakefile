@@ -3,5 +3,5 @@ require 'helium/jake'
 require 'fileutils'
 
 jake_hook :build_complete do |build|
-  FileUtils.cp('panel.css', 'test/panel.css')
+  FileUtils.cp('source/panel.css', 'test/panel.css')
 end
